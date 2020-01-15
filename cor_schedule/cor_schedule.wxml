@@ -1,0 +1,16 @@
+<!--components_simple/cor_schedule/cor_schedule.wxml-->
+<view class="cor_schedule {{config.mode}}">
+    <view class="cor_schedule_icons">
+        <block wx:for="{{config.arr}}" wx:key="index">
+            <view class="cor_schedule_circle {{index<=config.index&&!config.noActive?'active':''}}">
+                <image wx:if="{{!config.noActive}}" src="{{config.activeIcon||'./image/active.png'}}" class="active_icon"></image>
+            </view>
+            <view wx:if="{{index!=config.arr.length-1}}" class="cor_schedule_bar {{index<=config.index?'active':''}}"></view>
+        </block>
+    </view>
+    <view class="cor_schedule_texts" wx:if="{{!config.noText}}">
+        <block wx:for="{{config.arr}}" wx:key="index">
+            <view class="cor_schedule_text">{{item[config.key]||item.name}}</view>
+        </block>
+    </view>
+</view>

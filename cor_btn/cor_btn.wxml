@@ -1,0 +1,4 @@
+<!--components_simple/cor_btn/cor_btn.wxml-->
+<view wx:if="{{show}}" class="cor_btn {{type}}" style="background:{{bg}};border-color:{{bcolor||bg}};border-radius:{{br}}rpx;{{styles}}">
+    <view style="font-size:{{size||24}}rpx;color:{{color}};"><slot></slot></view>
+</view>

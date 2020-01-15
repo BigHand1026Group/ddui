@@ -1,0 +1,101 @@
+/* components_simple/cor_alert/cor_alert.wxss */
+.cor_gridItem{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 12;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+.cor_gridItem_content{
+    background: white;
+    font-size: 28rpx;
+    border-radius: 20rpx;
+    overflow: hidden;
+    width: 550rpx;
+    min-height: 225rpx;
+    line-height: 40rpx;
+    text-align: center;
+}
+.cor_gridItem_content_head{
+    height: 110rpx;
+    width: 100%;
+    background: linear-gradient(150deg,#f88061, #d72e2f); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35rpx;
+}
+.cor_gridItem_content_icons{
+
+}
+.cor_gridItem_content_icons_start_describe{
+    color: black;
+    height: 80rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cor_gridItem_content_icons_end_describe{
+    color:#999999;
+    font-size: 24rpx;
+    margin: 20rpx 0px;
+}
+.cor_gridItem_content_icons_item_content{
+    padding: 0px 30rpx;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10rpx auto;
+    /* justify-content: center; */
+}
+.cor_gridItem_content_icons_item_content.center{
+    justify-content: center;
+}
+.cor_gridItem_content_icons_item{
+    width: 20%;
+    height: 90rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cor_gridItem_content_icons_item .end{
+    width: 80rpx;
+    height: 80rpx;
+    /* border: #dddddd solid 1px; */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.end_item{
+    display: block;
+    width: 10rpx;
+    height: 10rpx;
+    background: #dddddd;
+    border-radius: 50%;
+    margin: 0px 2rpx;
+}
+.cor_gridItem_content_icons_item_icon{
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 50%;
+}
+.cor_gridItem_content_icon{
+    width: 88rpx;
+    height: 88rpx;
+    display:block;
+    margin: auto;
+}
+.close{
+    margin-top: 40rpx;
+}
+.close_icon{
+    width: 50rpx;
+    height: 50rpx;
+}

@@ -1,0 +1,79 @@
+/* components_simple/cor_selectPhotos/cor_selectPhotos.wxss */
+.DynamicImage{
+    margin:0rpx 0px; 
+    padding: 0rpx;
+    /* background: #25252e; */
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+  }
+  .addDynamicImageC{
+    display:flex; 
+    align-items: center;
+    justify-content: center;
+    width: 200rpx;
+    height: 200rpx;
+    position: relative;
+    margin-right: 25rpx;
+    margin-bottom: 25rpx;
+  }
+  .imageC{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 10rpx;
+    border: #cccccc solid 2px;
+    overflow: hidden;
+  }
+  .borderNone{
+    border: none;
+  }
+  .addDynamicImage{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border: #1498ff dashed 2px;
+    position: relative;
+    border-radius: 10rpx;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+  }
+  .shownativeImage{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+  }
+  /* ↓↓↓↓↓↓↓↓↓↓ 删除btn  */
+  .delectPostImg{
+    width:40rpx;
+    height: 40rpx;
+    background: #eb5454;
+    color: white;
+    line-height: 40rpx;
+    text-align: center;
+    position: absolute;
+    border-radius: 50%;
+    right: 0rpx;
+    top: 0rpx;
+    transform:translate(50%,-30%);
+    font-size: 24rpx;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .delectPostImg_icon{
+    width: 40%;
+    height: 40%;
+  }
+  /* ↑↑↑↑↑↑↑↑↑↑ 删除btn  */
+
+
+  /* ↓↓↓↓↓↓↓↓↓↓ 背景bg */
+  .addDynamicImageBG{
+    width: 100%;
+    height: 100%;
+  }
+  /* ↑↑↑↑↑↑↑↑↑↑ 背景bg */

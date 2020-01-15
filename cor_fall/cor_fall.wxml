@@ -1,0 +1,7 @@
+
+<!-- 金币掉落 -->
+<view class="fall">
+    <block wx:for="{{config}}" wx:key="index">
+        <image style="{{item.style}}" mode="widthFix" class="fallImage {{item.class}}" src="{{item.imgUrl}}"></image>
+    </block>
+</view>

@@ -1,0 +1,99 @@
+/* components_simple/cor_schedule/cor_schedule.wxss */
+.cor_schedule{
+    padding: 30rpx 0rpx;
+    box-sizing: border-box;
+}
+.cor_schedule_icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0rpx 75rpx;
+    box-sizing: border-box;
+}
+.cor_schedule_circle{
+    width:20rpx;
+    height:20rpx;
+    background:rgba(20,152,255,1);
+    border-radius: 50%;
+    margin: 0px 6rpx;
+    position: relative;
+}
+.cor_schedule_bar{
+    max-width:153rpx;
+    min-width: 50rpx;
+    flex: 1;
+    height:6rpx;
+    background:rgba(238,238,238,1);
+}
+.cor_schedule_texts{
+    display: flex;
+    margin-top: 40rpx;
+}
+.cor_schedule_text{
+    flex: 1;
+    text-align: center;
+    font-size:22rpx;
+    font-weight:500;
+    color:rgba(51,51,51,1);
+    white-space: nowrap;
+    display: inline;
+    /* margin-top: 36rpx; */
+    /* transform: translateX(-35%); */
+    /* left: -50%; */
+    /* position: absolute; */
+    /* display: block; */
+    /* background: red; */
+}
+.cor_schedule_circle.active{
+    /* width: 66rpx;
+    height: 66rpx; */
+    border-radius: 50%;
+    background: transparent;
+  
+}
+.active_icon{
+    /* width: 100%;
+    height: 100%; */
+    width: 66rpx;
+    height: 66rpx;
+    position: absolute;
+    top: 0px;right: 0px;left: 0px;bottom: 0px;
+    margin: auto;
+    display: none;
+    transform: translateX(-50%);
+
+}
+.cor_schedule_bar.active{
+    background: #1498FF;
+}
+.cor_schedule_circle.active .active_icon{
+    display: block;
+}
+
+
+/* ↓↓↓↓↓↓↓↓↓↓ 垂直样式 */
+.cor_schedule.vertical{
+  display: flex;
+}
+.cor_schedule.vertical .cor_schedule_icons{
+    /* display: block; */
+    flex-flow: column;
+    padding: 0px;
+}
+.cor_schedule.vertical .active_icon{
+  transform: translateX(-35%);
+}
+.cor_schedule.vertical .cor_schedule_bar{
+    min-width: 6rpx;
+    width: 6rpx;
+    min-height: 153rpx
+}
+.cor_schedule.vertical .cor_schedule_texts{
+  flex-flow: column;
+  margin-top: 0rpx;
+  justify-content: space-between
+}
+.cor_schedule.vertical .cor_schedule_text{
+  flex: 0;
+}
+/* ↑↑↑↑↑↑↑↑↑↑ 垂直样式 */

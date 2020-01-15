@@ -1,0 +1,14 @@
+/* components_simple/cor_wx_getUserInfo/cor_wx_getUserInfo.wxss */
+.cor_wx_getUserInfo{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+.cor_wx_getUserInfo_btn{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}

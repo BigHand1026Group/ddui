@@ -1,0 +1,4 @@
+<!--components_simple/cor_preview/cor_preview.wxml-->
+<view class="cor_preview">
+    <slot></slot>
+</view>

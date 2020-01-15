@@ -1,0 +1,44 @@
+<!-- cor  -->
+<view class="cor_lottery">
+
+    <!-- ↓↓↓↓↓↓↓↓↓↓ 抽奖窗口 -->
+    <view class="cor_lottery_container {{showGetLotteryPanel?'active':''}}">
+        <view class="cor_lottery_container_info">
+            <block wx:for="{{list}}" wx:key="index">
+                <view class="cor_lottery_container_info_item index_{{index}}" data-index="{{index}}" data-title="cor_lottery-点击抽奖" bind:tap="lotteryBtn">
+                    <view class="cor_lottery_container_info_item_c">
+                        <image class="cor_lottery_container_info_item_img {{clickLotteryBtn!=0?'animation':''}} {{clickLotteryBtn%2==0?'type1':'type2'}}" mode="widthFix" src="{{index!=4?item.imgUrl:'https://zsstory.oss-cn-shenzhen.aliyuncs.com/other/cor_lottery/go.png'}}"/>
+                        <view wx:if="{{index!=4}}" class="cor_lottery_container_info_item_text">{{item.name}}</view>
+                    </view>
+                    <image wx:if="{{index!=4}}" class="cor_lottery_container_info_item_bg" src="https://zsstory.oss-cn-shenzhen.aliyuncs.com/other/cor_lottery/choujiangbg.png"></image>
+                    <image wx:if="{{index==4}}" class="cor_lottery_container_info_item_bg" src="https://zsstory.oss-cn-shenzhen.aliyuncs.com/other/cor_lottery/choujiang_anniu.png"></image>
+                    <image class="cor_lottery_container_info_item_bg activeBg {{selectId==item.id?'active':''}}" src="https://zsstory.oss-cn-shenzhen.aliyuncs.com/other/cor_lottery/choujiangbg_active.png"/>
+                      
+                </view>
+            </block>
+        </view>
+        <image class="cor_lottery_container_bg" src="https://zsstory.oss-cn-shenzhen.aliyuncs.com/other/cor_lottery/choujiang_bg.png" />  
+        <image class="gimg guang" src="https://zsstory.oss-cn-shenzhen.aliyuncs.com/other/cor_lottery/guang.png"></image>
+        <image class="gimg guang2" src="https://zsstory.oss-cn-shenzhen.aliyuncs.com/other/cor_lottery/guang.png"></image>
+        <image class="gimg guang3" src="https://zsstory.oss-cn-shenzhen.aliyuncs.com/other/cor_lottery/guang.png"></image>
+    </view>
+    <!-- ↑↑↑↑↑↑↑↑↑↑ 抽奖窗口 -->
+
+    <!-- ↓↓↓↓↓↓↓↓↓↓ 抽奖结果 -->
+    <view class="cor_lottery_result {{showLotteryPanel?'active':''}}" bind:tap="closeLotteryPanel">
+        <view class="cor_lottery_result_info">
+            <view class="cor_lottery_result_info_prize">
+                <image class="cor_lottery_result_info_prize_image" mode="widthFix" src="{{list[lotteryIndex].imgUrl}}"></image>
+                <view class="cor_lottery_result_info_prize_image_text">{{list[lotteryIndex].name}}</view>
+            </view>
+            <image class="lood_rotate active" mode="widthFix" src="https://zsstory.oss-cn-shenzhen.aliyuncs.com/other/cor_lottery/big_guang.png"></image>
+            <image class="lood_rotateScale active" mode="widthFix" src="https://zsstory.oss-cn-shenzhen.aliyuncs.com/other/cor_lottery/xingGuang.png"></image>
+        </view>
+
+        <view class="out" catch:tap="goPage">
+            <image class="out_btn" src="https://zsstory.oss-cn-shenzhen.aliyuncs.com/other/cor_lottery/btn8.png"></image>
+        </view>
+    </view>
+    <!-- ↑↑↑↑↑↑↑↑↑↑ 抽奖结果 -->
+</view>
+  

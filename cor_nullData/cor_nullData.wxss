@@ -1,0 +1,26 @@
+/* components_simple/cor_nullData/cor_nullData.wxss */
+/* ↓↓↓↓↓↓↓↓↓↓ 空数据 */
+.nullData{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    height: 100%;
+    background: white;
+    position: fixed;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+  }
+  .nullData_tip{
+    font-size:24rpx;
+    font-weight:500;
+    color:rgba(204,204,204,1);
+  }
+  .nullData_content{
+    text-align: center;
+    position: relative;
+    top: -12%;
+  }
+  /* ↑↑↑↑↑↑↑↑↑↑ 空数据 */

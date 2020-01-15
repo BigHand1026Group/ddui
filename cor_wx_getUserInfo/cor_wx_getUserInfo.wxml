@@ -1,0 +1,5 @@
+<!--components_simple/cor_wx_getUserInfo/cor_wx_getUserInfo.wxml-->
+<!-- 微信授权 组件 -->
+<view class="cor_wx_getUserInfo" style="z-index:{{zindex}}" wx:if="{{show}}">
+    <button class="cor_wx_getUserInfo_btn" open-type="getUserInfo" bindgetuserinfo="getUserInfo"></button>
+</view>

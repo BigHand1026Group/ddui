@@ -1,0 +1,6 @@
+<!--components_simple/cor_editor/cor_editor.wxml-->
+
+<view class="cor_editor">
+    <editor id="{{id}}" class="cor_editor_content" read-only="{{readOnly}}" style="{{styles}}" placeholder="{{config.placeholder||''}}" bindinput="input" bindready="onEditorReady" bindblur="blur"></editor>
+</view>
+  

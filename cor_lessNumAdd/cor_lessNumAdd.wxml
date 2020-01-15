@@ -1,0 +1,7 @@
+<!--components_simple/cor_lessNumAdd/co_lessNumAdd.wxml-->
+  <view class='pru_operation_content stype_{{stype}}'>
+    <view class='less' bindtap='lessPru' data-title="{{udData.name}}"><image class="pru_operation_content_img" src='{{icons[0]||"./image/less.svg"}}'></image></view>
+    <view class='pru_num'><input type="number" class="pru_operation_content_input" value='{{pruNum}}' bindblur="userInput" bindinput="userInput2" data-title="{{udData.name}}"></input></view>
+    <view class='add' bindtap='addPru' data-title="{{udData.name}}"><image class="pru_operation_content_img" src='{{icons[1]||"./image/add.svg"}}'></image></view>
+  </view>
+

@@ -1,0 +1,71 @@
+/* components_simple/cor_ tooltip/cor_tooltip.wxss */
+.cor_tooltip{
+    position: relative;
+    display: inline-block;
+}
+.cor_tooltip .cor_tooltip_tip{
+    position: absolute;
+    z-index: 2;
+    left:0px;top: -60rpx;
+    margin: auto;
+    white-space: nowrap;
+    color: rgb(255, 255, 255);
+    border-radius:20rpx; 
+    font-size: 24rpx;
+}
+.cor_tooltip_contetn{
+  color: white;
+  padding: 10rpx 30rpx;
+  border-radius:20rpx; 
+  background: linear-gradient(89deg,#fe8f6a, #d22027); /* 标准的语法 */
+  position: relative;
+  z-index: 2;
+}
+.cor_tooltip .cor_tooltip_tip .triangle{
+    display: block;
+    width:0;
+    height:0;
+    border-style:solid;
+    position:absolute;
+    left: 0px;right: 0px;bottom: -18rpx;/*这里的bottom为宽度的2倍,因为有一部分是透明*/
+    z-index: 2;
+    margin: auto;
+    border-color:rgb(253, 71, 71) transparent transparent  transparent;
+    /* border-color:rgb(255, 255, 255) transparent transparent  transparent; */
+    border-width:10rpx;
+    /* transform: translateY(45%); */
+}
+.cor_tooltip .position_left.cor_tooltip_tip {
+    left:initial;
+}
+.cor_tooltip .position_left.cor_tooltip_tip .triangle{
+    /* 当显示为左侧的时候样式 */
+    bottom: 0px;
+    left: inherit;
+    right: -18rpx;
+    top: 0px;
+    margin:auto;
+    border-color:transparent  transparent transparent #d22027;
+  }
+
+  .cor_tooltip .position_right.cor_tooltip_tip .triangle{
+    /* 当显示为右侧的时候样式 */
+    bottom: 0px;
+    left: -18rpx;
+    right: inherit;
+    top: 0px;
+    margin:auto;
+    border-color:transparent #fe8f6a transparent transparent ;
+  }
+  .cor_tooltip .position_bottom.cor_tooltip_tip{
+    left:0px;top: 40rpx;
+  }
+  .cor_tooltip .position_bottom.cor_tooltip_tip .triangle{
+    /* 当显示为下端的时候样式 */
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    top: -28px;
+    margin:auto;
+    border-color:transparent transparent #e85648 transparent ;
+  }

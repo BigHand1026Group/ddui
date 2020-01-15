@@ -1,0 +1,14 @@
+<!-- cor c  自适应背景长度按钮 使用于 乌鸦杂货铺  -->
+<view class="assembly_btn {{active?'active':''}}">
+    <slot name="before"></slot>
+    <slot name="assembly_btn_head"></slot>
+    <image class="assembly_btn_head" hidden="{{!active}}" src="{{config.activeBtnHeadUrl}}"></image>
+    <image class="assembly_btn_head" hidden="{{active}}" src="{{config.btnHeadUrl}}"></image>
+    <view class="assembly_btn_content" style="background: url({{active?config.activeBtnCenterUrl:config.btnCenterUrl}}) repeat-x;">
+        <slot name="content"></slot>
+    </view>
+    <image class="assembly_btn_bottom" hidden="{{!active}}" src="{{config.activeBtnBottomUrl}}"></image>
+    <image class="assembly_btn_bottom" hidden="{{active}}" src="{{config.btnBottomUrl}}"></image>
+    <slot name="after"></slot>
+    <slot name="assembly_btn_bottom"></slot>
+</view>

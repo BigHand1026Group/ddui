@@ -1,0 +1,6 @@
+<view class="cor_radio_c" catch:tap="select">
+    <view class="cor_radio type_{{type}} type_{{config.type}} {{select?'active':''}}">
+        <image class="cor_radio_image {{select?'show':''}}" src="{{config.activeUrl||activeUrl||'./image/active.png'}}"></image>
+    </view>
+    <slot name="label"></slot>
+</view>

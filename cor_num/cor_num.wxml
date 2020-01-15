@@ -1,0 +1,46 @@
+<!-- components_simple/cor_num/cor_num.wxml -->
+<wxs module="fn">
+function isSingleDigit(num){
+    //判断是否是单位数
+    return num.length<2
+}
+function setStyle(num,size){
+  // 设置样式 
+  var isSing=isSingleDigit(num);
+  var style=''
+  var mPower=2.165;//倍率
+  if(!isSing){
+    //复数
+    var br='border-radius:'+Math.pow(size,0.94)+'rpx;'
+    var pd='padding:0px '+Math.pow(size,0.79)+'rpx;'
+    var height='height:'+(size+size/mPower)+'rpx;';
+    style=br+pd+height
+  }else{
+    //单数
+    var height='height:'+(size+size/mPower)+'rpx;';
+    var width='width:'+(size+size/mPower)+'rpx;';
+    style=width+height
+  }
+  return style
+}
+function setWH(w,h){
+  //自定义宽高
+  var width='';
+  var height='';
+  var style=""
+  if(w)width='width:'+w+'rpx;';
+  if(h)height='height:'+h+'rpx;';
+  return width+height
+  
+}
+
+
+module.exports = {
+  isSingleDigit : isSingleDigit,
+  setStyle:setStyle,
+  setWH:setWH
+}
+</wxs>
+<view class="cor_num {{has0?'has0':''}} num_{{num||0}} isSingleDigit_{{fn.isSingleDigit(num)}}" style="background:{{bg}};font-size:{{size||24}}rpx;{{fn.setStyle(num,size)}}{{fn.setWH(w,h)}}">
+  <text class="cor_num_text">{{num||0}}</text>
+</view>

@@ -1,0 +1,5 @@
+<!--components_simple/cor_nUllChin/cor_nUllChin.wxml-->
+<view class="cor_nUllChin"  wx:if="{{isNUllChin}}">
+    <slot class="cor_nUllChin_slot"></slot>
+</view>
+<slot wx:if="{{!isNUllChin}}"></slot>

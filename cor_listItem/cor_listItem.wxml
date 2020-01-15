@@ -1,0 +1,10 @@
+<!--components_simple/cor_listItem/cor_listItem.wxml-->
+
+<view class="userFnList_item">
+  <view class="userFnList_item_text">{{config[fields&&fields[0]]||config.text}}</view>
+  <view class="userFnList_item_text_describe">
+    <slot></slot>
+    <text class="userFnList_item_text_describe_text">{{config[fields&&fields[1]]||config.textDescribe}}</text> 
+    <image class="userFnList_item_text_describe_arrow" mode="aspectFit" src="../../imgs/user/user_arrow_03.png"></image>
+  </view>
+</view>

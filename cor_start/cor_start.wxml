@@ -1,0 +1,6 @@
+<!--components_simple/cor_start/cor_start.wxml-->
+<view class="cor_starts">
+    <block wx:for="{{startArr}}" wx:key="index">
+        <image class="cor_starts_start" style="width:{{config.w}}rpx;height:{{config.h}}rpx;" mode="widthFix" data-index="{{index}}" bind:tap="setNum" src="{{starsUrls[item]}}"></image>
+    </block>
+</view>

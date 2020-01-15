@@ -1,0 +1,8 @@
+/* components_simple/cor_btn_select/cor_btn_select.wxss */
+.cor_btns{
+    display: flex;
+    flex-wrap: wrap;
+}
+.marginRight{
+    width: 40rpx;
+}

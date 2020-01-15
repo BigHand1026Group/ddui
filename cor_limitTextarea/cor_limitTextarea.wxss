@@ -1,0 +1,26 @@
+/* components_simple/cor_limitTextarea/cor_limitTextarea.wxss */
+/* ↓↓↓↓↓↓↓↓↓↓ 自定义反馈 */
+.cor_limitTextarea{
+    background: #F7F7F7;
+    padding: 20rpx;
+    position: relative;
+    color: #282828;
+    border-radius: 10rpx;
+    height: 200rpx;
+}
+.cor_limitTextarea_textarea{
+    width: 100%;
+    height: 100%;
+    font-size: 30rpx;
+}
+.cor_limitTextarea_placeholder{
+    color: #AAAAAA;
+    font-size: 26rpx;
+}
+.cor_limitTextarea_limitNum{
+    position: absolute;
+    right: 20rpx;
+    bottom: 20rpx;
+    color: #727281;
+}
+/* ↑↑↑↑↑↑↑↑↑↑ 自定义反馈 */

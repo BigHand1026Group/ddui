@@ -1,0 +1,3 @@
+<!--components_simple/cor_openType/cor_openType.wxml-->
+<button wx:if="{{type}}" open-type="{{type}}" class="cor_openType"></button>
+

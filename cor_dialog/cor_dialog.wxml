@@ -1,0 +1,18 @@
+<view class="cor_dialog" wx:if="{{show}}" bind:tap="fullTap">
+    <view class="cor_dialog_content" style="{{config.contentStyle}}" catchtap="dialogContent">
+        <view wx:if="{{config&&config.title}}" class="cor_dialog_content_title">
+           {{config.title}}
+        </view>
+        <view class="cor_dialog_content_texts {{config.slot?'slot':''}}">
+            {{config.text}}
+            <slot wx:if="{{config.slot}}"></slot>
+        </view>
+        <view class="cor_dialog_content_btns" wx:if="{{!config.noBtn}}" style="{{btnsStyle}}">
+            <view class="cancel cor_dialog_content_btn" wx:if="{{config.cancel}}" bind:tap="cancel"> <text class="cancelText cor_dialog_content_btn_text">{{config.cancelText||"取消"}}</text> </view>
+            <view class="confirm cor_dialog_content_btn" bind:tap="confirm"> <text class="confirmText cor_dialog_content_btn_text">{{config.confirmText || '确认'}}</text> </view>
+        </view>
+    </view>
+    <view class="close"  bind:tap="close">
+        <image class="close_img" src="./image/close.png"></image>
+    </view>
+</view>

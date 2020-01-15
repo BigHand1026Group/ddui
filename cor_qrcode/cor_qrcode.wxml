@@ -1,0 +1,3 @@
+<!--components_simple/cor_qrcode/cor_qrcode.wxml-->
+<canvas id='ShareCode' class='codeImage' style="width:{{size}}rpx;height:{{size}}rpx" disable-scroll='true' bindtouchmove="touchMove" canvas-id='canvas'></canvas>
+

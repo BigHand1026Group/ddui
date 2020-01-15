@@ -1,0 +1,10 @@
+/* components_simple/cor_copy/cor_copy.wxss */
+.copy{
+    font-size:22rpx;
+    font-weight:500;
+    color:rgba(20,152,255,1);
+    border:rgba(20,152,255,1) solid 1px;
+    padding:4rpx 14rpx;
+    box-sizing: border-box;
+    border-radius: 5rpx;
+}

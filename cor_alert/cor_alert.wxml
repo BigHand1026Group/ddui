@@ -1,0 +1,11 @@
+<view wx:if="{{config.show||false}}" class="corAlert">
+    <!-- ↓↓↓↓↓↓↓↓↓↓ 弹窗内容 -->
+    <view class="corAlert_content">
+        <image 
+        wx:if="{{config.type!='none'}}" 
+        class="corAlert_content_icon" 
+        src="{{config&&config.image||iconTypes[config&&config.type]}}"></image>
+        <rich-text nodes="{{config.text}}"></rich-text>
+    </view>
+    <!-- ↑↑↑↑↑↑↑↑↑↑ 弹窗内容 -->
+</view>

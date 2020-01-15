@@ -1,0 +1,7 @@
+<!--components_simple/cor_icon/cor_icon.wxml-->
+    <image class="cor_icon" src="{{src=='default'?'./image/default.png':src}}" bind:tap="tap" mode="aspectFill" style="width:{{width||size||0}}rpx;height:{{height||size||0}}rpx;display:block;border-radius:{{br}};"></image>
+  
+
+  
+  
+  

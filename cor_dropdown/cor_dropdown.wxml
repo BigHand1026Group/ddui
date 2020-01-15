@@ -1,0 +1,37 @@
+<!--components_simple/cor_dropdown/cor_dropdown.wxml-->
+<wxs module="fn">
+function setIcon(icon,only){
+    if(icon&&only){
+        return icon
+    }
+    if(only==2){
+        return './image/icon_active.png'
+    }
+    if(only==1){
+        return './image/icon.png'
+    }
+}
+function setMax(max,str){
+    if(max&&str.length>max){
+        return str.substring(0,max)+"..."
+    }else{
+        return str
+    }
+}
+module.exports = {
+    setIcon:setIcon,
+    setMax:setMax
+}
+</wxs>
+<view class="cor_dropdown onlyType_{{only}}" style="{{styles}}">
+    <view hidden="{{value.length!=0}}" class="cor_dropdown_placeholder cor_dropdown_text">{{fn.setMax(max,placeholder)||"请选择"}}</view>
+    <view hidden="{{value.length==0}}" class="cor_dropdown_value cor_dropdown_text">{{fn.setMax(max,value)||''}}</view>
+    <view wx:if="{{!only}}" class="cor_dropdown_icons {{value.length!=0?'active':''}}">
+        <image style="width:{{iconWidth}}rpx;height:{{iconHeight}}rpx" class="cor_dropdown_icon" src="{{icon||'./image/icon.png'}}"></image>
+        <image style="width:{{iconWidth}}rpx;height:{{iconHeight}}rpx" class="cor_dropdown_icon icon_active" src="{{noActive?'./image/icon.png':'./image/icon_active.png'}}"></image>
+    </view>
+    <view wx:if="{{only}}" class="cor_dropdown_icons">
+        <!-- 当only 为2 的时候 显示 选中的样式 否则 显示 为选中的状态 -->
+        <image style="width:{{iconWidth}}rpx;height:{{iconHeight}}rpx" class="cor_dropdown_icon" src="{{fn.setIcon(icon,only)}}"></image>
+    </view>
+</view>

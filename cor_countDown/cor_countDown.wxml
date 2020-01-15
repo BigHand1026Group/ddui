@@ -1,0 +1,11 @@
+<!--components/countDown/countDown.wxml-->
+<view class='cDown' wx:if="{{timeIsShow}}">
+  <text class='time_item seckill_pru_content_price_day' wx:if="{{day!='0'}}">{{day}}</text>
+  <text class="time_item divide" wx:if="{{day!='0'}}">{{daySymbol||'天'}}</text>
+  <text class='time_item seckill_pru_content_price_hour' wx:if="{{showZeroHourMinute||hours!='00'||day!='0'}}">{{hours}}</text>
+  <text class="time_item divide" wx:if="{{showZeroHourMinute||hours!='00'||day!='0'}}">{{hoursSymbol||':'}}</text>
+  <text class='time_item seckill_pru_content_price_minute' wx:if="{{showZeroHourMinute||minutes!='00'||hours!='00'||day!='0'}}">{{minutes}}</text>
+  <text class="time_item divide" wx:if="{{showZeroHourMinute||minutes!='00'||hours!='00'||day!='0'}}">{{minutesSymbol||':'}}</text>
+  <text class='time_item seckill_pru_content_price_second'>{{seconds}}</text>
+</view>
+

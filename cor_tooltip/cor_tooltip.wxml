@@ -1,0 +1,12 @@
+<!--components_simple/cor_ tooltip/cor_tooltip.wxml-->
+<view class='cor_tooltip' style="{{config&&config.tooltipStyle}}">
+    <view 
+    wx:if="{{config&&config.text.length>0}}" 
+    style="{{style}}{{config&&config.tooltipTipStyle}}"
+    bind:tag="clickText"
+    class="cor_tooltip_tip position_{{config.position}}">
+        <view class="cor_tooltip_contetn" style="{{config&&config.tooltipContetnStyle}}" >{{config&&config.text}}</view>
+        <text class="triangle" style="{{config&&config.triangleStyle}}"></text>
+    </view>
+   <slot class="cor_tooltip_tip_slot"></slot>
+</view>

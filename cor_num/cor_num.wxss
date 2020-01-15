@@ -1,0 +1,23 @@
+/* components_simple/cor_num/cor_num.wxss */
+.cor_num{
+    background: #FF5000;
+    color: white;
+    border-radius: 50%;
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
+
+}
+.cor_num_text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.num_0{
+    display: none;
+}
+.has0.num_0{
+    display: flex;
+}

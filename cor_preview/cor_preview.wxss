@@ -1,0 +1,5 @@
+/* components_simple/cor_preview/cor_preview.wxss */
+.cor_preview{
+    /* height: 0px; */
+    display: inline-block;
+}

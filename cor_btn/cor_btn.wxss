@@ -1,0 +1,21 @@
+/* components_simple/cor_btn/cor_btn.wxss */
+.cor_btn{
+    height: 90rpx;
+    display: block;
+    text-align:center;
+    background: #1498ff;
+    box-sizing: border-box;
+    border: #1498ff solid 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10rpx;
+    color: white;
+    position: relative;
+}
+.cor_btn.inline{
+    height: auto;
+    display: inline-block;
+    padding: 10rpx 17rpx;
+    white-space: nowrap;
+}

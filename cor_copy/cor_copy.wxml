@@ -1,0 +1,2 @@
+<!--components_simple/cor_copy/cor_copy.wxml-->
+<text class="copy" bind:tap="copy">复制</text>

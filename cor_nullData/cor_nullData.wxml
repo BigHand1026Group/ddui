@@ -1,0 +1,7 @@
+<!--components_simple/cor_nullData/cor_nullData.wxml-->
+<view class="nullData">
+    <view class="nullData_content">
+        <cor_icon src="../../imgs/g_nullData.png" wh="270|270"></cor_icon>
+        <view class="nullData_tip">{{tip||'暂时没有消息~'}}</view>
+    </view>
+</view>

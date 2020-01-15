@@ -1,0 +1,4 @@
+<view class="cor_switch {{status?'open':''}}" bind:tap="clickSwitch">
+    <text class="cor_switch_btn"></text>
+</view>
+

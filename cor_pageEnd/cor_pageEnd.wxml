@@ -1,0 +1,2 @@
+<!--components_simple/cor_pageEnd/cor_pageEnd.wxml-->
+<view class="cor_pageEnd" wx:if="{{show}}">{{text||'没有更多了~'}}</view>

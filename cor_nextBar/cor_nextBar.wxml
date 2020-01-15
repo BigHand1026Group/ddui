@@ -1,0 +1,14 @@
+<!--components_simple/cor_nextBar/cor_nextBar.wxml-->
+<view class="cor_nextBar">
+    <view class="cor_nextBar_content" style="border-bottom-color:{{bcolor}}">
+        <view class="cor_nextBar_content_texts">
+            <view class="cor_nextBar_content_texts_tip">{{tip}}</view>
+            <view wx:if="{{!value&&placeholder}}" style="{{placeholderStyle}}" class="cor_nextBar_content_texts_placeholder">{{placeholder}}</view>
+            <view wx:if="{{value}}" style="color:{{color}}" class="cor_nextBar_content_texts_content {{contentLeft?'left':''}}">{{value}}</view>
+            <slot name="content"></slot>
+        </view>
+        <view class="cor_nextBar_content_icon" wx:if="{{!noIcon}}">
+            <image src="./image/back.png" class="cor_nextBar_content_icon_image"></image>
+        </view>
+    </view>
+</view>

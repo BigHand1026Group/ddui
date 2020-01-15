@@ -1,0 +1,6 @@
+/* components_simple/cor_start/cor_start.wxss */
+.cor_starts .cor_starts_start{
+    width: 30rpx;
+    height: 30rpx;
+    margin-right: 5rpx;
+}

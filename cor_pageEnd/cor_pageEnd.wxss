@@ -1,0 +1,12 @@
+/* components_simple/cor_pageEnd/cor_pageEnd.wxss */
+/* ↓↓↓↓↓↓↓↓↓↓ end */
+.cor_pageEnd{
+    text-align: center;
+    margin-top: 30rpx;
+    font-size:20rpx;
+    font-weight:500;
+    color:rgba(153,153,153,1);
+    padding-bottom:20rpx;
+    box-sizing: border-box;
+  }
+  /* ↑↑↑↑↑↑↑↑↑↑ end */

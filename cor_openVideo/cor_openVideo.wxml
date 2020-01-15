@@ -1,0 +1,12 @@
+<!--components_simple/cor_openVideo/cor_openVideo.wxml-->
+<view class="cor_openVideo">
+    <view class="video_btn" bind:tap="openVideo">
+        <cor_icon src="../../imgs/g_video.png" wh="40|30"></cor_icon>
+        <!-- <text class="video_btn_text" bind:tap="openVideo">观看视频</text> -->
+        <text wx:if="{{text}}" class="video_btn_text" bind:tap="openVideo">{{text}}</text>
+    </view>
+</view>
+
+<view class="videoPanel" wx:if="{{show}}" bind:tap="clickPanel">
+     <video id="myVideo" catch:tap="clickVideo" class="video" src="{{url}}" autoplay="{{true}}" controls="{{true}}"></video>
+</view>

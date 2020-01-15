@@ -1,0 +1,5 @@
+<!--components/cor_systemBar/cor_systemBar.wxml-->
+<view class='statusBarHeightFixed' 
+style='height:{{statusBarHeight}};background:{{config&&config.background||"white"}}'>
+</view>
+<view wx:if="{{!config.noOccupi}}" class='statusBarHeight' style='height:{{statusBarHeight}}'></view>

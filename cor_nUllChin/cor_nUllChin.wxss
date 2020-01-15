@@ -1,0 +1,4 @@
+/* components_simple/cor_nUllChin/cor_nUllChin.wxss */
+.cor_nUllChin{
+    margin-bottom: 40rpx;
+}

@@ -1,0 +1,66 @@
+/*增加减少  */
+.pru_operation{
+    display: flex;
+    background: white;
+    padding: 20rpx;
+    margin: 1px 0px;
+    align-items: center;
+  }
+  .pru_operation_tip{
+    flex-basis:100rpx; 
+    font-size: 28rpx;
+  }
+  .pru_operation_content{
+    flex-basis:200rpx;
+    height: 36rpx;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+  }
+  .pru_operation_content .pru_operation_content_img{
+    width: 40rpx;
+    height: 40rpx;
+  }
+  .pru_num{
+    width: 70rpx;
+    height: 100%;
+    min-height: 100%;
+    text-align: center;
+    font-size: 18rpx;
+    position: relative;
+    border-top:#AAAAAA solid 1px; 
+    border-bottom:#AAAAAA solid 1px; 
+  }
+  .pru_num .pru_operation_content_input{
+    padding: 0;
+    margin: 0;
+    font-size: 24rpx;
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    left: 0;
+    top: 0;
+  }
+  .less,.add{
+    height: 100%;
+    width: 36rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:#AAAAAA solid 1px;
+  }
+  /*增加减少  */
+
+
+  /* style */
+  .stype_2 .pru_num{
+    border: none;
+  }
+  .stype_2 .less,.stype_2 .add{
+    border: none;
+    background: #1498FF;
+    border-radius: 50%;
+  }
+  /* style */

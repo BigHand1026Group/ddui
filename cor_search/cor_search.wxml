@@ -1,0 +1,10 @@
+<!--components_simple/cor_search/cor_search.wxml-->
+<view class="cor_searchC">
+    <view class="cor_search" style="{{searchStyle}}">
+        <image src="./image/icon.png" mode="aspectFill" class="cor_search_icon"></image>
+        <input class="cor_search_input" placeholder-style="{{placeholderStyle}}" bindinput="input" placeholder="{{placeholder}}" bindblur="blur" type="text"></input>
+    </view>
+    <view class="cor_search_btn_c" wx:if="{{!noBtn}}">
+        <view class="cor_search_btn" bind:tap="searchBtn">搜索</view>
+    </view>
+</view>

@@ -1,0 +1,8 @@
+<!--components_simple/cor_photo_radio/cor_photo_radio.wxml-->
+<view class="cor_radio_c" catch:tap="select">
+    <view class="cor_radio {{select?'active':''}}" style="width:{{size}}rpx;height:{{size}}rpx">
+        <image class="cor_radio_image {{select?'':'show'}}" src="{{config.noActiveUrl||'./image/noActive.png'}}"></image>
+        <image class="cor_radio_image {{select?'show':''}}" src="{{config.activeUrl||'./image/active.png'}}"></image>
+    </view>
+    <slot name="label"></slot>
+</view>

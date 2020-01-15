@@ -1,0 +1,18 @@
+<!-- 导航 -->
+
+<view class="cor_navigateFixed" style="background:{{config&&config.background||'transparent'}}">
+    <view class='statusBarHeightFixed' style='height:{{statusBarHeight}};'></view>
+    <view class="cor_navigate_content" style="height:{{systemNavigate}}">
+        <view wx:if="{{config&&config.showIcon||pagesLength>1}}" class="cor_navigate_back" bind:tap="goBack">
+            <image class="cor_navigate_back_image" mode="widthFix" src="{{config.backImage}}"></image>
+            <slot name="title"></slot>
+        </view>
+        <view class="cor_navigate_title">
+            <text class="cor_navigate_title_text" style="color:{{config.color}}">{{config.title}}</text>
+        </view>
+    </view>
+</view>
+<!-- ↓↓↓↓↓↓↓↓↓↓ 占位高度 -->
+<view class='statusBarHeight' wx:if="{{!config.noOccupy}}" style='height:{{statusBarHeight}}'></view>
+<view class="cor_navigate" wx:if="{{!config.noOccupy}}" style="height:{{systemNavigate}}"></view>
+<!-- ↑↑↑↑↑↑↑↑↑↑ 占位高度 -->

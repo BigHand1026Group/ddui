@@ -1,0 +1,7 @@
+<!--components_simple/cor_btn_select/cor_btn_select.wxml-->
+<view class="cor_btns">
+    <block wx:for="{{config.values}}" wx:key="index">
+        <cor_btn bind:tap="selectTab" data-index="{{index}}" styles="padding:10rpx 23rpx;" type="inline" bg="{{item.active?'#1498FF':'#F3F8FF'}}" color="{{item.active?'#FFFFFF':'#999999'}}" size="28">{{item[ranKey]||item.name}}</cor_btn>
+        <view class="marginRight" wx:if="{{index!=config.values.length-1}}"></view>
+    </block>
+</view>

@@ -1,0 +1,13 @@
+/* components/cor_systemBar/cor_systemBar.wxss */
+.statusBarHeightFixed{
+  width: 100%;
+  background: black;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 5;
+}
+.statusBarHeight{
+  background: transparent;
+  top: 0px;
+}

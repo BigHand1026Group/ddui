@@ -1,0 +1,8 @@
+/* components_simple/cor_symbol/cor_symbol.wxss */
+.cor_symbolC{
+    display: flex;
+    align-items: baseline;
+}
+.cor_symbol_text{
+    
+}

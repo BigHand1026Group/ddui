@@ -1,0 +1,14 @@
+<!--components_simple/cor_limitTextarea/cor_limitTextarea.wxml-->
+<view class="cor_limitTextarea">
+    <textarea 
+    class="cor_limitTextarea_textarea" 
+    bindblur="imitTextareaBlur"
+    bindinput="imitTextareaInput"
+    maxlength="{{config.max}}" 
+    type="text" 
+    placeholder-style="{{config.placeholderStyle}}"
+    placeholder-class="cor_limitTextarea_placeholder" 
+    value="{{config.value}}" 
+    placeholder="{{config.placeholder}}"  />
+    <text class="cor_limitTextarea_limitNum" wx:if="{{config.max}}">{{currentNum}} / {{config.max}}</text>
+</view>

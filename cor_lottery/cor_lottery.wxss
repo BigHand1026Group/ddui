@@ -1,0 +1,249 @@
+/* components_simple/cor_lottery/cor_lottery.wxss */
+.cor_lottery{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    right: 0px;
+    background:rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cor_lottery_container{
+    width: 750rpx;
+    height: 847rpx;
+    position: relative;
+    display: none;
+    /* background: rgba(50,0,0); */
+}
+.cor_lottery_container.active{
+    display: block;
+}
+.cor_lottery_container_bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.cor_lottery_container_info{
+    width: 587rpx;
+    height: 587rpx;
+    /* border: white solid 1px; */
+    position: absolute;
+    z-index: 2;
+    left: 0px;right: 0px;top: 20rpx;bottom: 0px;
+    margin: auto;
+    transform: translateY(20rpx);
+    display: flex;
+    flex-flow: wrap;
+    padding: 10rpx;
+    padding-left: 20rpx;
+    box-sizing: border-box;
+}
+.cor_lottery_container_info_item_c{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+
+}
+.cor_lottery_container_info_item{
+    /* width: 33.3333%;
+    height: 33.3333%; */
+    width: 164rpx;
+    height: 164rpx;
+    /* border: white solid 1px;     */
+    position: relative;
+    box-sizing: border-box;
+    margin: 10rpx;
+}
+
+.cor_lottery_container_info_item_img{
+    width: 100rpx;
+    height: 100rpx;
+    display: block;
+}
+.cor_lottery_container_info_item_text{
+    font-size:24rpx;
+    font-weight:500;
+    color:rgba(176,184,218,1);
+    line-height:20px;
+}
+.cor_lottery_container_info_item_bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    display: block;
+}
+.cor_lottery_container_info_item_c{
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+}
+
+/* ↓↓↓↓↓↓↓↓↓↓ 自定义抽奖样式 */
+.index_4 .cor_lottery_container_info_item_img{
+    width: 94rpx;
+    height: 117rpx;
+}
+.index_4 .cor_lottery_container_info_item_img.animation.type1{
+    animation: sc 100ms ease 1;
+}
+.index_4 .cor_lottery_container_info_item_img.animation.type2{
+    animation: sc2 100ms ease 1;
+}
+@keyframes sc{
+    0%{transform: scale(1)}
+    50%{transform: scale(1.1)}
+    100%{transform: scale(1)}
+}
+@keyframes sc2{
+    0%{transform: scale(1)}
+    50%{transform: scale(1.11)}
+    100%{transform: scale(1)}
+}
+.activeBg{
+    display: none;
+}
+.activeBg.active{
+    display: block;
+}
+/* ↑↑↑↑↑↑↑↑↑↑ 自定义抽奖样式 */
+.gimg{
+    position: absolute;
+    width:154rpx;
+    height: 180rpx;
+    /* border: white solid 1px; */
+    z-index: 3;
+}
+.guang{
+    left: -24rpx;
+    bottom: 125rpx;
+    animation: gg 8s linear infinite;
+}
+.guang2{
+    left: 0px;
+    bottom: 80rpx;
+    animation: gg 6s linear infinite;
+}
+.guang3{
+    right: 0px;
+    bottom: 50rpx;
+    animation: gg 4s linear infinite;
+}
+@keyframes gg{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;   
+    }
+    100%{
+        opacity: 0;   
+    }
+}
+
+
+/* ↓↓↓↓↓↓↓↓↓↓ 抽奖结果 */
+.cor_lottery_result{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    right: 0px;
+    background:rgba(0,0,0);
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    display: none;
+}
+.cor_lottery_result.active{
+    display: flex;
+}
+.cor_lottery_result_info{
+    width: 100%;
+    height: 700rpx;
+    position: relative;
+}
+.cor_lottery_result_info_prize{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 4;
+}
+.cor_lottery_result_info_prize_image_text{
+    position: absolute;
+    bottom: 160rpx;
+    width: 100%;
+    text-align: center;
+    font-size:34rpx;
+    font-weight:bold;
+    color:rgba(255,255,255,1);
+}
+.lood_rotate{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.lood_rotate.active{
+    animation:rotate 10s infinite;
+    animation-timing-function:linear;
+}
+.lood_rotateScale{
+    width: 477rpx;
+    height: 568rpx;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
+    z-index: 2;
+    animation:rotateScale 20s infinite;
+    animation-timing-function:linear;
+}
+.cor_lottery_result_info_prize_image{
+    width: 262rpx;
+    height: 262rpx;
+}
+@keyframes rotate{
+    from {
+      transform:rotate(0deg)
+    }
+    to {
+      transform:rotate(360deg)
+    }
+  }
+  @keyframes rotateScale{
+    from {
+      transform:rotate(0deg) scale(1)
+    }
+    to {
+      transform:rotate(360deg) scale(1.1)
+    }
+  }
+  .out{
+      position: absolute;
+      bottom: 100rpx;
+      width: 100%;
+      height:100rpx;
+      text-align: center;
+  }
+  .out_btn{
+    width:345rpx;
+    height:100rpx;
+  }
+/* ↑↑↑↑↑↑↑↑↑↑ 抽奖结果 */

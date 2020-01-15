@@ -1,0 +1,31 @@
+/* components_simple/cor_listItem/cor_listItem.wxss */
+.userFnList_item{
+  display: flex;
+  /* height: 50rpx; */
+  align-items: center;
+  box-sizing: border-box; 
+  padding: 35rpx 0px;
+  /* padding-left:20rpx; */
+  margin: 0px 30rpx;
+  border-bottom: #3b3b42 solid 1px;
+  position: relative;
+}
+.userFnList_item_text{
+  flex: 1;
+  font-size: 30rpx;
+}
+.userFnList_item_text_describe{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.userFnList_item_text_describe_text{
+  font-size: 24rpx;
+  color: #999999;
+}
+.userFnList_item_text_describe_arrow{
+  width: 30rpx;
+  height: 30rpx;
+  margin-left:10rpx; 
+}

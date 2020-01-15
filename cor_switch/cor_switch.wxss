@@ -1,0 +1,27 @@
+/* components_simple/cor_switch/cor_switch.wxss */
+.cor_switch{
+    display:inline-block;
+    width: 70rpx;
+    height: 30rpx;
+    background: #b3b3b3; /* 标准的语法 */
+    border-radius:50rpx; 
+    position: relative;
+}
+.cor_switch_btn{
+    width: 35rpx;
+    height: 35rpx;
+    background: white;
+    position: absolute;
+    top: 0px;bottom: 0px;right: 35rpx;
+    margin: auto;
+    border-radius: 50%;
+    /* transition: all ease 0.2s; */
+}
+.cor_switch.open{
+    /* 打开状态 */
+    background: linear-gradient(120deg,#fb8765, #e34c41);
+}
+.cor_switch.open .cor_switch_btn{
+     /* 打开状态 */
+    right: 0px;
+}

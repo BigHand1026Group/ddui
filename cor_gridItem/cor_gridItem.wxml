@@ -1,0 +1,33 @@
+<view class="cor_gridItem" wx:if="{{show}}">
+    <view class="cor_gridItem_content">
+        <view class="cor_gridItem_content_head">
+            {{config.title||'已邀请好友'}}
+        </view>
+        <view class="cor_gridItem_content_icons">
+            <view class="cor_gridItem_content_icons_start_describe" wx:if="{{config.before}}">
+                <!-- 已成功邀请到32位好友 -->
+                <slot name="before"></slot>
+            </view>
+            <view class="cor_gridItem_content_icons_item_content {{list.length<5?'center':''}}" >
+                <block wx:for="{{list}}" wx:key="index">
+                    <view class="cor_gridItem_content_icons_item" data-index="{{index}}" style="'width':{{list.length<5?(100/list.length):'20'}}%">
+                        <image class="cor_gridItem_content_icons_item_icon" src="{{item[key&&key[0]]||item.imgUrl}}"></image>
+                    </view>
+                </block>
+                <view class="cor_gridItem_content_icons_item end" wx:if="{{showOmit}}">
+                    <view class="end">
+                        <block wx:for="{{3}}" wx:key="index">
+                            <text class="end_item"></text>
+                        </block>
+                    </view>
+                </view>
+            </view>
+            <view class="cor_gridItem_content_icons_end_describe" wx:if="{{config.after}}">
+                <slot name="after"></slot>
+            </view>
+        </view>
+    </view>
+    <view class="close" bind:tap="close">
+        <image class="close_icon" src="../../imgs/icon/warn.png"></image>
+    </view>
+</view> 

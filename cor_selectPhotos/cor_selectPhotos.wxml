@@ -1,0 +1,31 @@
+<!--components_simple/cor_selectPhotos/cor_selectPhotos.wxml-->
+<wxs module="fn">
+function setWH(config){
+    //设置宽高
+    if(!config.width)return ''
+    return "width:"+config.width+"rpx;"+"height:"+config.height+"rpx;"
+}
+module.exports = {
+  setWH : setWH,
+}
+</wxs>
+  <view class='DynamicImage' style="{{config.cStyle}}">
+    <block wx:for="{{nativeImage}}" wx:key="index">
+      <view class='addDynamicImageC' style="{{fn.setWH(config)}}{{config.ccStyle}}">
+          <view class="delectPostImg" data-index="{{index}}" bindtap="delectPostImg">
+            <image class="delectPostImg_icon" src="./image/close.png"></image>
+          </view>
+        <view class="imageC">
+          <image mode="aspectFill"  class='shownativeImage' src='{{item}}'></image>
+        </view>
+      </view>
+    </block>
+    <view class='addDynamicImageC borderNone' style="{{fn.setWH(config)}}{{config.ccStyle}}" wx:if="{{nativeImage.length<((config&&config.count)||9)}}">
+      <view class='addDynamicImage' bindtap='addImage'>
+        <image class="addDynamicImageBG" src="{{config.bgUrl||'./image/bg.png'}}"></image>
+      </view>
+    </view>
+    <block wx:for="{{placeholderNum}}" wx:key="index">
+      <view class="addDynamicImageC" style="{{fn.setWH(config)}}"></view>
+    </block>
+  </view>

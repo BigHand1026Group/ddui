@@ -1,0 +1,50 @@
+.cor_dropdown{
+    border:#1498FF solid 1px;
+    padding: 10rpx 20rpx;
+    box-sizing:border-box;
+    border-radius: 5rpx;
+    display: flex;
+    align-items: center;
+    padding-right: 0px;
+}
+.cor_dropdown_text{
+    flex: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    word-wrap:break-word
+}
+.cor_dropdown_placeholder{
+    font-size:28rpx;
+    font-weight:500;
+    color:rgba(204,204,204,1);
+}
+.cor_dropdown_value{
+    font-size:28rpx;
+    font-weight:500;
+    color:rgba(51,51,51,1);
+}
+.cor_dropdown_icon{
+    width: 18rpx;
+    height: 12rpx;
+    display: block;
+    margin: 0px 14rpx;
+}
+.cor_dropdown_icon.icon_active{
+    display: none;
+}
+/* ↓↓↓↓↓↓↓↓↓↓ 控制icon 显示的状态 */
+.cor_dropdown_icons .cor_dropdown_icon.icon_active{
+    /* 默认情况下 选中的状态是隐藏的 */
+    display: none;
+}
+.cor_dropdown_icons.active .cor_dropdown_icon{
+    /* 选中的时候隐藏 不是active */
+    display: none;
+}
+.cor_dropdown_icons.active .cor_dropdown_icon.icon_active{
+    /* 选中的时候显示  */
+    display: block;
+}
+/* ↑↑↑↑↑↑↑↑↑↑ 控制icon 显示的状态 */

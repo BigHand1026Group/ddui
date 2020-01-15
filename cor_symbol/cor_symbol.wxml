@@ -1,0 +1,19 @@
+<!--components_simple/cor_symbol/cor_symbol.wxml-->
+<wxs module="fn">
+function setStyle(color,size){
+    // 设置样式
+    var text=""
+    if(color)text+='color:'+color+";"
+    if(size)text+='font-size:'+size+"rpx";
+    return text
+}
+
+module.exports = {
+    setStyle:setStyle
+}
+</wxs>
+<view class="cor_symbolC" style="{{fn.setStyle(color,size)}};{{styles}}">
+    <view class="cor_symbol" wx:if="{{symbolSite=='before'}}" style="{{fn.setStyle(symbolColor,symbolSize)}}">{{symbol||'￥'}}</view>
+    <view class="cor_symbol_text">{{text}}</view>
+    <view class="cor_symbol" wx:if="{{symbolSite=='after'}}" style="{{fn.setStyle(symbolColor,symbolSize)}}">{{symbol||'￥'}}</view>
+</view>

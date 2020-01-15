@@ -1,0 +1,12 @@
+<!--components_simple/cor_simple_countDown/cor_simple_countDown.wxml-->
+<wxs module="fn">
+function getActiveText(status,activeText){
+    //设置每日任务奖励的奖励类型
+    if(status==1&&activeText)return activeText
+    if(status==1&&!activeText)return "S后重发"
+}
+module.exports = {
+  getActiveText : getActiveText,
+}
+</wxs>
+<text class="cor_simple_countDown status_{{status}}">{{num}}{{fn.getActiveText(status,activeText)}}</text>

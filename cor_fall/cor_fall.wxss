@@ -1,0 +1,123 @@
+/* components_simple/cor_fall/cor_fall.wxss */
+.fall{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+.fallImage{
+    width: 40rpx;
+    height: 40rpx;
+    position: absolute;
+    animation: fall1 18s cubic-bezier(0.57, 0.05, 0.68, 0.19) infinite;
+    display: inline-block;
+}
+.fallImage.fast{
+    animation: fallfast 8s cubic-bezier(0.57, 0.05, 0.68, 0.19) infinite;
+}
+@keyframes fall1 {
+    0%, 11% {
+        transform: translateY(0)  rotateZ(0deg) ;
+    }
+    18%, 100% {
+        transform: translateY(60rem)  rotateZ(360deg);
+    }
+}
+@keyframes fall2 {
+    0%, 12% {
+        transform: translateY(0)  rotateZ(0deg);
+    }
+    19%, 100% {
+        transform: translateY(60rem)  rotateZ(360deg);
+    }
+}
+@keyframes fall3 {
+    0%, 13% {
+        transform: translateY(0)  rotateZ(0deg);
+    }
+    20%, 100% {
+        transform: translateY(60rem)  rotateZ(360deg);
+    }
+}
+@keyframes fall4 {
+    0%, 14% {
+        transform: translateY(0)  rotateZ(0deg);
+    }
+    21%, 100% {
+        transform: translateY(60rem)  rotateZ(360deg);
+    }
+}
+@keyframes fall5 {
+    0%, 15% {
+        transform: translateY(0)  rotateZ(0deg);
+    }
+    22%, 100% {
+        transform: translateY(60rem)  rotateZ(360deg);
+    }
+}
+@keyframes fall6 {
+    0%, 16% {
+        transform: translateY(0)  rotateZ(0deg);
+    }
+    23%, 100% {
+        transform: translateY(60rem)  rotateZ(360deg);
+    }
+}
+@keyframes fall7 {
+    0%, 17% {
+        transform: translateY(0)  rotateZ(0deg);
+    }
+    24%, 100% {
+        transform: translateY(60rem)  rotateZ(360deg);
+    }
+}
+@keyframes fall8 {
+    0%, 18% {
+        transform: translateY(0)  rotateZ(0deg);
+    }
+    25%, 100% {
+        transform: translateY(60rem)  rotateZ(360deg);
+    }
+}
+@keyframes fall9 {
+    0%, 19% {
+        transform: translateY(0)  rotateZ(0deg);
+    }
+    26%, 100% {
+        transform: translateY(60rem)  rotateZ(360deg);
+    }
+}
+@keyframes fall10 {
+    0%, 20% {
+        transform: translateY(0)  rotateZ(0deg);
+    }
+    27%, 100% {
+        transform: translateY(60rem)  rotateZ(360deg);
+    }
+}
+@keyframes fall11 {
+    0%, 21% {
+        transform: translateY(0)  rotateZ(0deg);
+    }
+    28%, 100% {
+        transform: translateY(60rem)  rotateZ(360deg);
+    }
+}
+@keyframes fall12 {
+    0%, 22% {
+        transform: translateY(0)  rotateZ(0deg);
+    }
+    29%, 100% {
+        transform: translateY(60rem)  rotateZ(360deg);
+    }
+}
+@keyframes fall1fast {
+    80%{
+        transform: translateY(0rem)  rotateZ(0deg);
+    }
+    100% {
+        transform: translateY(60rem)  rotateZ(360deg);
+    }
+}

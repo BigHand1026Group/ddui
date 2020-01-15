@@ -1,0 +1,40 @@
+/* components_simple/cor_input/cor_input.wxss */
+.cor_inputc{
+    height: 110rpx;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 30rpx;
+    box-sizing: border-box;
+    position: relative;
+}
+.cor_inputc_input{
+    font-size:34rpx;
+    font-weight:500;
+    color:rgba(51,51,51,1);
+    flex: 1;
+}
+.cor_input_label{
+    font-size:34rpx;
+    font-weight:500;
+    color:rgba(51,51,51,1);
+    min-width:200rpx;
+}
+.cor_inputc_input_placeholder{
+    font-size:34rpx;
+    font-weight:500;
+    color:rgba(204,204,204,1);
+}
+.cor_input_label.symbol{
+    min-width: auto;
+    margin-left: 10rpx;
+}
+.bColor{
+    background: #EEEEEE;
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}

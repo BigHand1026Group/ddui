@@ -1,0 +1,4 @@
+/* components_simple/cor_simple_countDown/cor_simple_countDown.wxss */
+.status_1{
+    color: #999999;
+}

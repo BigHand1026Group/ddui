@@ -1,0 +1,30 @@
+/* components_simple/cor_assemblyBtn/cor_assemblyBtn.wxss */
+.assembly_btn{
+    height:74rpx;
+    display: flex;
+    /* margin-top:70rpx; */
+    position: relative;
+    margin: 0px 20rpx;
+}
+.assembly_btn_head{
+    width: 40rpx;
+    height: 100%;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+.assembly_btn_bottom{
+    width: 40rpx;
+    height: 100%;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+.assembly_btn_content{
+    /* background: url(https://zsstory.oss-cn-shenzhen.aliyuncs.com/other/sc_index/active_center.png) repeat-x; */
+    background-size:100% 100% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}

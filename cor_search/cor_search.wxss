@@ -1,0 +1,38 @@
+/* components_simple/cor_search/cor_search.wxss */
+.cor_searchC{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cor_search{
+    position: relative;
+    background: #F6F6F6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height:74rpx;
+    flex: 1;
+    border-radius: 10rpx;
+}
+.cor_search_input{
+    flex: 1;
+    height: 100%;
+    font-size: 28rpx;
+}
+.cor_search_icon{
+    width: 30rpx;
+    height: 30rpx;
+    margin:0px 30rpx;
+}
+.cor_search_btn_c{
+    margin-left: 20rpx;
+}
+.cor_search_btn{
+    background: #1498FF;
+    font-size:28rpx;
+    font-weight:500;
+    color:rgba(243,247,251,1);  
+    padding: 24rpx 48rpx;
+    border-radius: 10rpx;
+}
+

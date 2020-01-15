@@ -1,0 +1,10 @@
+<!--components_simple/cor_input/cor_input.wxml-->
+<view class="cor_inputc">
+    <text class="cor_input_label" wx:if="{{label}}">{{label}}</text>
+    <slot name="label"></slot>
+    <input type="text" password="{{password||false}}" type="{{type||'text'}}" class="cor_inputc_input" value="{{value}}" placeholder-class="cor_inputc_input_placeholder" placeholder="{{placeholder}}" bindblur="blur" bindinput="input"></input>
+    <cor_icon wx:if="{{!noIcon}}"  bind:tap="clear" src="{{iconUrl||'../cor_input/image/close.png'}}" size="30"></cor_icon>
+    <text class="cor_input_label symbol" wx:if="{{symbol}}">{{symbol}}</text>
+    <slot name="symbol"></slot>
+    <view style="background:{{bcolor}}" class="bColor"></view>
+</view>

@@ -1,6 +1,6 @@
 {
   "component": true,
   "usingComponents": {
-    "cor_icon":"/components_simple/cor_icon/cor_icon"
+    "cor_icon":"/ddui/cor_icon/cor_icon"
   }
 }
